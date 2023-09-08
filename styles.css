@@ -1,0 +1,348 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Basic styling for the navigation bar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #274c77;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.navbar a:hover {
+    background-color: #6096ba;
+}
+/* Style for the logo container */
+.logo-container {
+    float: left;
+    margin: 5px 5px 0 20px;
+    display: inline;
+}
+/* Style for the logo image */
+.logo img {
+    height: 20px;
+    width: 15px;
+    vertical-align: middle;
+}
+/* Style for the logo text */
+.logo h3 {
+    display: inline;
+    color: white;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    /* Adjust the margin as needed */
+}
+/* Style for the search bar and button */
+.search-container {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.search-container input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 100px;
+    font-size: 14px;
+}
+.search-container button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+/* Style for the login button */
+.login-button {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+/* Ensure all items are in one line */
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.title {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navigation-bar{
+    height: 100px;
+    width: 100%;
+}
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-top: 70px;
+}
+.main-two,.main-three{
+    margin-top: 15px;
+}
+.main-three{
+    padding: 0px 0px 0px 0px;
+}
+/* Style category section */
+.categories {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+/* Style for each category */
+.category-heading{
+    width: 100%;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+.category {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    height: 300px;
+}
+/* Style for category images */
+.category img {
+    margin-top: 70px;
+    max-width: 90%;
+}
+/* Style for category headings */
+.category h2 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: "Berkshire Swash";
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns */
+    }
+} 
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+    .categories {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+}
+.one
+{
+    background-color: #fa8383;
+}
+.two
+{
+    background-color: #f3cd97;
+}
+.three
+{
+    background-color: #95e0d2;
+}
+.four
+{
+    background-color: #c3ead5;
+}
+.three>img{
+    margin-top: 90px;
+}
+.four img
+{
+    margin-top: 80px;
+}
+.category:hover
+{
+    transform: translateY(-5px);
+} 
+/* Style product section */
+.product 
+{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img 
+{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.main-product
+{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 10px;
+
+}
+
+.product img:hover 
+{
+    transform: scale(1.05);
+}
+
+.product h2 
+{
+    font-size: 24px;
+    margin: 10px 0;
+}
+/* .product h3
+{
+    
+} */
+.product .price{
+    margin: 10px 10px 10px 10px;
+}
+
+.price button {
+    display: inline-block;
+    background-color: #ddd;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.price button:hover {
+    background-color: #9e9999;
+}
+    
+/* Media query for smaller screens */
+@media (max-width: 1000px) {
+    .main-product{
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns */
+    }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 680px) {
+    .main-product {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+}
+
+
+.blog 
+{
+
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.blog h2 
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.navigation-bar 
+{
+    height: 100px;
+    width: 100%;
+}
+
+/* Blog container styling */
+.blog-container
+{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+/* Image styling */
+.blog-image 
+{
+    float: left;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+/* Paragraph styling */
+.blog-paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin: 10px 10px 10px 10px;
+}
+.blog-item{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.blog-title{
+    text-align: center;
+}
+
+.read-more{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+@media (max-width: 680px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+}
+
+.read-more{
+    text-decoration: none;
+}
